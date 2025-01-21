@@ -30,7 +30,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_dotenv: ^5.2.1
+  flutter_screenutil: ^5.9.3
+  get: ^4.6.6
+  overlay_support: ^2.1.0
+  windows_single_instance: ^1.0.1
+  flutter_localizations:
+    sdk: flutter
+  remote_database_setting:
+    git:
+      url: https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git
+      ref: main
+  shared_widgets:
+    git:
+      url: https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git
+      ref: master
+  pos_shared_preferences:
+    git:
+      url: https://github.com/YousenTech-Flutter/yousentech_pos_shared_preferences.git
+      ref: master
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
