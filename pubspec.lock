@@ -442,7 +442,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "61d158574452fb3c8ef84eb878b1153dd7e61289"
+      resolved-ref: cc672f1554e741d756ae8984f48b14536fda401c
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_preferences.git"
     source: git
     version: "1.0.1"
