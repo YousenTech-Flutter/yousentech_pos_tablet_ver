@@ -22,9 +22,10 @@ import 'package:yousentech_pos_token/token_settings/presentation/token_screen.da
 
 Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(
-      fileName: kDebugMode ? ".env.development" : ".env.production");
-  String encryptionKeyBase64 = dotenv.env['ENCRYPTION_KEY']!;
+  // await dotenv.load(fileName: kDebugMode ? ".env.development" : ".env.production");
+  // String encryptionKeyBase64 = dotenv.env['ENCRYPTION_KEY']!;
+  // await SharedPr.init(encryptionKeyBase64:encryptionKeyBase64 );
+  await SharedPr.loadEnv();
   await SharedPr.init();
   SharedPr.retrieveInfo();
   await FileManagement.getInstance();
