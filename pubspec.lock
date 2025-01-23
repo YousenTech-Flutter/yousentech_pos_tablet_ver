@@ -458,6 +458,7 @@ packages:
     description:
       path: "."
       ref: master
+      resolved-ref: "61d158574452fb3c8ef84eb878b1153dd7e61289"
       resolved-ref: "222ecdaa36dc4917f8be1ef2e7eebc1cb0b2b21e"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_preferences.git"
     source: git
@@ -548,7 +549,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: ac384897c2c33be5d60c48f800dbc843f1a34703
+      resolved-ref: a98dfb702735ab8859a534582ef0faced8160bc4
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
