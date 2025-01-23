@@ -1,9 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -16,7 +14,7 @@ import 'package:shared_widgets/config/app_messages_translation.dart';
 import 'package:shared_widgets/config/network_connectivity_checker.dart';
 import 'package:shared_widgets/utils/file_management.dart';
 import 'package:shared_widgets/utils/mac_address_helper.dart';
-import 'package:yousentech_authentication/authentication/presentation/views/employees_list.dart';
+// import 'package:yousentech_authentication/authentication/presentation/views/employees_list.dart';
 import 'package:yousentech_pos_local_db/yousentech_pos_local_db.dart';
 import 'package:yousentech_pos_token/token_settings/presentation/token_screen.dart';
 
@@ -70,7 +68,8 @@ class _MyAppState extends State<MyApp> {
               ? const KeyScreen()
               : SharedPr.token == null
                   ? const TokenScreen()
-                  : const EmployeesListScreen(),
+                  : Container(),
+          //  EmployeesListScreen(),
           //===
           builder: (_, child) {
             return GetMaterialApp(

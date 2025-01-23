@@ -458,7 +458,6 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "61d158574452fb3c8ef84eb878b1153dd7e61289"
       resolved-ref: "222ecdaa36dc4917f8be1ef2e7eebc1cb0b2b21e"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_preferences.git"
     source: git
@@ -758,15 +757,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.3"
-  yousentech_authentication:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: master
-      resolved-ref: e0390185daf485fe2b9c5c8621e05a85c24da33e
-      url: "https://github.com/YousenTech-Flutter/yousentech_authentication.git"
-    source: git
-    version: "0.0.1"
   yousentech_pos_local_db:
     dependency: "direct main"
     description:
