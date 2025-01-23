@@ -258,30 +258,24 @@ packages:
     description:
       name: leak_tracker
       sha256: "7bb2830ebd849694d1ec25bf1f44582d6ac531a57a365a803a6034ff751d2d06"
-      sha256: "7bb2830ebd849694d1ec25bf1f44582d6ac531a57a365a803a6034ff751d2d06"
       url: "https://pub.dev"
     source: hosted
-    version: "10.0.7"
     version: "10.0.7"
   leak_tracker_flutter_testing:
     dependency: transitive
     description:
       name: leak_tracker_flutter_testing
       sha256: "9491a714cca3667b60b5c420da8217e6de0d1ba7a5ec322fab01758f6998f379"
-      sha256: "9491a714cca3667b60b5c420da8217e6de0d1ba7a5ec322fab01758f6998f379"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.8"
     version: "3.0.8"
   leak_tracker_testing:
     dependency: transitive
     description:
       name: leak_tracker_testing
       sha256: "6ba465d5d76e67ddf503e1161d1f4a6bc42306f9d66ca1e8f079a47290fb06d3"
-      sha256: "6ba465d5d76e67ddf503e1161d1f4a6bc42306f9d66ca1e8f079a47290fb06d3"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.1"
     version: "3.0.1"
   lints:
     dependency: transitive
@@ -304,10 +298,8 @@ packages:
     description:
       name: material_color_utilities
       sha256: f7142bb1154231d7ea5f96bc7bde4bda2a0945d2806bb11670e30b850d56bdec
-      sha256: f7142bb1154231d7ea5f96bc7bde4bda2a0945d2806bb11670e30b850d56bdec
       url: "https://pub.dev"
     source: hosted
-    version: "0.11.1"
     version: "0.11.1"
   meta:
     dependency: transitive
@@ -450,7 +442,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "8369d422d3879a1d1db68db50559a11cc0fb9bc7"
+      resolved-ref: "61d158574452fb3c8ef84eb878b1153dd7e61289"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_preferences.git"
     source: git
     version: "1.0.1"
@@ -475,10 +467,10 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: ab191a092b427f2ed7cced676619a463133b43bf
+      resolved-ref: "46cb61208da573d45177e8862aa73a93c887d319"
       url: "https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git"
     source: git
-    version: "0.0.1"
+    version: "1.0.0"
   shared_preferences:
     dependency: transitive
     description:
@@ -540,7 +532,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "2c8bb6fda0127067d260d35c252bb776bb002c48"
+      resolved-ref: "144c4f15149803bb0cbc0273aca150fac657af88"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -548,7 +540,6 @@ packages:
     dependency: transitive
     description: flutter
     source: sdk
-    version: "0.0.0"
     version: "0.0.0"
   source_span:
     dependency: transitive
@@ -558,15 +549,37 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
+  sqflite_common:
+    dependency: transitive
+    description:
+      name: sqflite_common
+      sha256: "761b9740ecbd4d3e66b8916d784e581861fd3c3553eda85e167bc49fdb68f709"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.5.4+6"
+  sqflite_common_ffi:
+    dependency: transitive
+    description:
+      name: sqflite_common_ffi
+      sha256: "883dd810b2b49e6e8c3b980df1829ef550a94e3f87deab5d864917d27ca6bf36"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.4+4"
+  sqlite3:
+    dependency: transitive
+    description:
+      name: sqlite3
+      sha256: "35d3726fe18ab1463403a5cc8d97dbc81f2a0b08082e8173851363fcc97b6627"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.7.2"
   stack_trace:
     dependency: transitive
     description:
       name: stack_trace
       sha256: "9f47fd3630d76be3ab26f0ee06d213679aa425996925ff3feffdec504931c377"
-      sha256: "9f47fd3630d76be3ab26f0ee06d213679aa425996925ff3feffdec504931c377"
       url: "https://pub.dev"
     source: hosted
-    version: "1.12.0"
     version: "1.12.0"
   stream_channel:
     dependency: transitive
@@ -688,15 +701,24 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.3"
+  yousentech_pos_local_db:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: "93006073cad7504f734a71779687a7d1068f5561"
+      url: "https://github.com/YousenTech-Flutter/yousentech_pos_local_db.git"
+    source: git
+    version: "1.0.1"
   yousentech_pos_token:
     dependency: "direct main"
     description:
       path: "."
       ref: master
-      resolved-ref: "8b3192155189ae7471c1dcbf175e5a14b685e2c8"
+      resolved-ref: d23a9b89ff761f2d98e7eec8ce547c936a855ec5
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_token.git"
     source: git
     version: "1.0.0"
 sdks:
-  dart: ">=3.5.3 <4.0.0"
+  dart: ">=3.6.1 <4.0.0"
   flutter: ">=3.24.0"
