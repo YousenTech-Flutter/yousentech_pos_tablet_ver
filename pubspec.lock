@@ -467,7 +467,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "961f1dc35bd674079c445eab2ef9d1754d8e5f26"
+      resolved-ref: "46cb61208da573d45177e8862aa73a93c887d319"
       url: "https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git"
     source: git
     version: "1.0.0"
@@ -702,7 +702,7 @@ packages:
     source: hosted
     version: "3.1.3"
   yousentech_pos_local_db:
-    dependency: transitive
+    dependency: "direct main"
     description:
       path: "."
       ref: master

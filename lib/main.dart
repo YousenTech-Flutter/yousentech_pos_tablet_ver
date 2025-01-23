@@ -16,6 +16,7 @@ import 'package:shared_widgets/config/app_messages_translation.dart';
 import 'package:shared_widgets/config/network_connectivity_checker.dart';
 import 'package:shared_widgets/utils/file_management.dart';
 import 'package:shared_widgets/utils/mac_address_helper.dart';
+import 'package:yousentech_pos_local_db/yousentech_pos_local_db.dart';
 import 'package:yousentech_pos_token/token_settings/presentation/token_screen.dart';
 
 
@@ -26,11 +27,12 @@ Future<void> main(List<String> args) async {
   await SharedPr.init(encryptionKeyBase64:encryptionKeyBase64 );
   SharedPr.retrieveInfo();
   await FileManagement.getInstance();
-  // change
   // await DbHelper.getInstance();
+  // change
   // await AppInvoiceStyle.loadFonts();
-  await RemoteDatabaseSettingService.instantiateOdooConnection();
   //===
+  await RemoteDatabaseSettingService.instantiateOdooConnection();
+  
   await MacAddressHelper.getDeviceMacAddress();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.landscapeLeft,
@@ -68,12 +70,15 @@ class _MyAppState extends State<MyApp> {
           splitScreenMode: true,
           child:
               SharedPr.subscriptionDetailsObj?.url == null
-                  ? const KeyScreen()
+                  ? 
+                  const KeyScreen()
                   : 
                   const TokenScreen(),
+                  // change
                   // SharedPr.token == null
                   //     ? const TokenScreen()
                   //     : const EmployeesListScreen(),
+                  //===
           builder: (_, child) {
             return GetMaterialApp(
                 title: 'Point Of Sale',
