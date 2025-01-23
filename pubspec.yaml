@@ -2,7 +2,7 @@ name: yousentech_pos_tablet_ver
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.0 <4.0.0'
+  sdk: ">=3.3.0 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
 
   yousentech_pos_local_db:
     git:
@@ -52,7 +51,10 @@ dependencies:
     git:
       url: https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git
       ref: main
-
+  yousentech_authentication:
+    git:
+      url: https://github.com/YousenTech-Flutter/yousentech_authentication.git
+      ref: master
   overlay_support: ^2.1.0
   get: ^4.6.6
   flutter_dotenv: ^5.2.1
@@ -67,8 +69,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  
-
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -81,7 +81,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

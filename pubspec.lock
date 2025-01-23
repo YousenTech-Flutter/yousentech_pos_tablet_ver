@@ -309,6 +309,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.15.0"
+  network_info_plus:
+    dependency: transitive
+    description:
+      name: network_info_plus
+      sha256: "5bd4b86e28fed5ed4e6ac7764133c031dfb7d3f46aa2a81b46f55038aa78ecc0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.3"
+  network_info_plus_platform_interface:
+    dependency: transitive
+    description:
+      name: network_info_plus_platform_interface
+      sha256: "7e7496a8a9d8136859b8881affc613c4a21304afeb6c324bcefc4bd0aff6b94b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.2"
   nm:
     dependency: transitive
     description:
@@ -442,7 +458,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "61d158574452fb3c8ef84eb878b1153dd7e61289"
+      resolved-ref: "222ecdaa36dc4917f8be1ef2e7eebc1cb0b2b21e"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_preferences.git"
     source: git
     version: "1.0.1"
@@ -467,7 +483,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "46cb61208da573d45177e8862aa73a93c887d319"
+      resolved-ref: "961f1dc35bd674079c445eab2ef9d1754d8e5f26"
       url: "https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git"
     source: git
     version: "1.0.0"
@@ -532,7 +548,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "144c4f15149803bb0cbc0273aca150fac657af88"
+      resolved-ref: a98dfb702735ab8859a534582ef0faced8160bc4
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -549,6 +565,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
+  sqflite:
+    dependency: transitive
+    description:
+      name: sqflite
+      sha256: "2d7299468485dca85efeeadf5d38986909c5eb0cd71fd3db2c2f000e6c9454bb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
+  sqflite_android:
+    dependency: transitive
+    description:
+      name: sqflite_android
+      sha256: "78f489aab276260cdd26676d2169446c7ecd3484bbd5fead4ca14f3ed4dd9ee3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.0"
   sqflite_common:
     dependency: transitive
     description:
@@ -565,6 +597,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.4+4"
+  sqflite_darwin:
+    dependency: transitive
+    description:
+      name: sqflite_darwin
+      sha256: "22adfd9a2c7d634041e96d6241e6e1c8138ca6817018afc5d443fef91dcefa9c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1+1"
+  sqflite_platform_interface:
+    dependency: transitive
+    description:
+      name: sqflite_platform_interface
+      sha256: "8dd4515c7bdcae0a785b0062859336de775e8c65db81ae33dd5445f35be61920"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.0"
   sqlite3:
     dependency: transitive
     description:
@@ -677,6 +725,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+  win32:
+    dependency: transitive
+    description:
+      name: win32
+      sha256: "154360849a56b7b67331c21f09a386562d88903f90a1099c5987afc1912e1f29"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.10.0"
   xdg_directories:
     dependency: transitive
     description:
@@ -701,12 +757,21 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.3"
+  yousentech_authentication:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: e0390185daf485fe2b9c5c8621e05a85c24da33e
+      url: "https://github.com/YousenTech-Flutter/yousentech_authentication.git"
+    source: git
+    version: "0.0.1"
   yousentech_pos_local_db:
     dependency: "direct main"
     description:
       path: "."
       ref: master
-      resolved-ref: "93006073cad7504f734a71779687a7d1068f5561"
+      resolved-ref: "4226bfb861f97a647b003214db14231921238b4e"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_local_db.git"
     source: git
     version: "1.0.1"
@@ -715,7 +780,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: d23a9b89ff761f2d98e7eec8ce547c936a855ec5
+      resolved-ref: "0946475e48362463bd45543f33afa075b49aa782"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_token.git"
     source: git
     version: "1.0.0"
