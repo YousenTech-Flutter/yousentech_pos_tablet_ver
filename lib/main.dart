@@ -14,9 +14,9 @@ import 'package:shared_widgets/config/app_messages_translation.dart';
 import 'package:shared_widgets/config/network_connectivity_checker.dart';
 import 'package:shared_widgets/utils/file_management.dart';
 import 'package:shared_widgets/utils/mac_address_helper.dart';
+// import 'package:yousentech_authentication/authentication/presentation/views/employees_list.dart';
 import 'package:yousentech_pos_local_db/yousentech_pos_local_db.dart';
 import 'package:yousentech_pos_token/token_settings/presentation/token_screen.dart';
-
 
 Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,12 +36,12 @@ Future<void> main(List<String> args) async {
   ]);
   runApp(const MyApp());
 }
+
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
-
 }
 
 class _MyAppState extends State<MyApp> {
@@ -64,17 +64,13 @@ class _MyAppState extends State<MyApp> {
           designSize: const Size(360, 690),
           minTextAdapt: true,
           splitScreenMode: true,
-          child:
-              SharedPr.subscriptionDetailsObj?.url == null
-                  ? 
-                  const KeyScreen()
-                  : 
-                  const TokenScreen(),
-                  // change
-                  // SharedPr.token == null
-                  //     ? const TokenScreen()
-                  //     : const EmployeesListScreen(),
-                  //===
+          child: SharedPr.subscriptionDetailsObj?.url == null
+              ? const KeyScreen()
+              : SharedPr.token == null
+                  ? const TokenScreen()
+                  : Container(),
+          //  EmployeesListScreen(),
+          //===
           builder: (_, child) {
             return GetMaterialApp(
                 title: 'Point Of Sale',
@@ -103,9 +99,7 @@ class _MyAppState extends State<MyApp> {
                         fontFamily: 'Tajawal',
                       ),
                 ),
-                home: child
-                );
-
+                home: child);
           }),
     );
   }
