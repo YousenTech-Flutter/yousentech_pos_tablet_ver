@@ -4,18 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
 import 'package:overlay_support/overlay_support.dart';
 import 'package:pos_shared_preferences/pos_shared_preferences.dart';
 import 'package:remote_database_setting/remote_database_setting/domain/remote_database_setting_service.dart';
 import 'package:remote_database_setting/remote_database_setting/presentation/key_screen.dart';
 import 'package:shared_widgets/config/app_colors.dart';
+import 'package:shared_widgets/config/app_invoice_styles.dart';
 import 'package:shared_widgets/config/app_messages_translation.dart';
 import 'package:shared_widgets/config/network_connectivity_checker.dart';
 import 'package:shared_widgets/utils/file_management.dart';
 import 'package:shared_widgets/utils/mac_address_helper.dart';
+import 'package:yousentech_authentication/authentication/presentation/views/employees_list.dart';
 // import 'package:yousentech_authentication/authentication/presentation/views/employees_list.dart';
 import 'package:yousentech_pos_local_db/yousentech_pos_local_db.dart';
+import 'package:yousentech_pos_notification/notification/utils/background_task.dart';
+import 'package:yousentech_pos_notification_history/notification_history/domain/notification_history_viewmodel.dart';
 import 'package:yousentech_pos_token/token_settings/presentation/token_screen.dart';
 
 Future<void> main(List<String> args) async {
@@ -25,9 +29,7 @@ Future<void> main(List<String> args) async {
   SharedPr.retrieveInfo();
   await FileManagement.getInstance();
   await DbHelper.getInstance();
-  // change
-  // await AppInvoiceStyle.loadFonts();
-  //===
+  await AppInvoiceStyle.loadFonts();
   await RemoteDatabaseSettingService.instantiateOdooConnection();
   await MacAddressHelper.getDeviceMacAddress();
   SystemChrome.setPreferredOrientations([
@@ -48,17 +50,14 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    // change
-    // Get.put(NotificationHistoryController());
-    //===
+
+    Get.put(NotificationHistoryController());
   }
 
   @override
   Widget build(BuildContext context) {
     NetworkConnectivityChecker.init();
-    // change
-    // BackgroundTask.init();
-    //===
+    BackgroundTask.init();
     return OverlaySupport(
       child: ScreenUtilInit(
           designSize: const Size(360, 690),
@@ -68,8 +67,7 @@ class _MyAppState extends State<MyApp> {
               ? const KeyScreen()
               : SharedPr.token == null
                   ? const TokenScreen()
-                  : Container(),
-          //  EmployeesListScreen(),
+                  : const EmployeesListScreen(),
           //===
           builder: (_, child) {
             return GetMaterialApp(
