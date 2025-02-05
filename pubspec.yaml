@@ -55,6 +55,14 @@ dependencies:
     git:
       url: https://github.com/YousenTech-Flutter/yousentech_authentication.git
       ref: master
+  yousentech_pos_notification:
+    git:
+      url: https://github.com/YousenTech-Flutter/yousentech_pos_notification.git
+      ref: master
+  yousentech_pos_notification_history:
+    git:
+      url: https://github.com/YousenTech-Flutter/yousentech_pos_notification_history.git
+      ref: master
   overlay_support: ^2.1.0
   get: ^4.6.6
   flutter_dotenv: ^5.2.1
