@@ -117,7 +117,7 @@ Future<void> initNotification() async {
   final FlutterLocalNotificationsPlugin notificationsPlugin =
       FlutterLocalNotificationsPlugin();
   AndroidInitializationSettings initializationSettingsAndroid =
-      const AndroidInitializationSettings('app_launcher.png');
+      const AndroidInitializationSettings("@mipmap/ic_launcher");
 
   var initializationSettingsIOS = const DarwinInitializationSettings(
     requestAlertPermission: true,
