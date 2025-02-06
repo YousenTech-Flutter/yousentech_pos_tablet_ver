@@ -932,7 +932,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "2e99887331d1e36c541fbffd90348760c54045fc"
+      resolved-ref: ee1fe1947274f10058977220474b35ac5036dcc4
       url: "https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git"
     source: git
     version: "1.0.0"
@@ -997,7 +997,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "55bc80d8527a587860f3baac6be0c6ce56732e18"
+      resolved-ref: b5a6cc6ae7c4724dae679685c5b56ca98d4e9c6b
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -1325,7 +1325,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: fbc0bd0150424fd264169616a65d1480b843cabf
+      resolved-ref: a34528acb4cfd21a70d56499610cb94c82ab371e
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_dashboard.git"
     source: git
     version: "1.0.0"
