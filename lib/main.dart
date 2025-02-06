@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -25,7 +27,13 @@ import 'package:yousentech_pos_token/token_settings/presentation/token_screen.da
 
 Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
-  NotificationLocalController.getInstance().initNotification();
+  if (Platform.isAndroid || Platform.isIOS) {
+    initNotification();
+  }
+
+  // NotificationLocalController.getInstance()
+  //     .initNotification(imageName: 'app_launcher.png');
+
   await SharedPr.loadEnv();
   await SharedPr.init();
   SharedPr.retrieveInfo();
@@ -103,4 +111,24 @@ class _MyAppState extends State<MyApp> {
           }),
     );
   }
+}
+
+Future<void> initNotification() async {
+  final FlutterLocalNotificationsPlugin notificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+  AndroidInitializationSettings initializationSettingsAndroid =
+      const AndroidInitializationSettings('app_launcher.png');
+
+  var initializationSettingsIOS = const DarwinInitializationSettings(
+    requestAlertPermission: true,
+    requestBadgePermission: true,
+    requestSoundPermission: true,
+    // onDidReceiveLocalNotification:
+    //     (int id, String? title, String? body, String? payload) async {}
+  );
+  var initializationSettings = InitializationSettings(
+      android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
+  await notificationsPlugin.initialize(initializationSettings,
+      onDidReceiveNotificationResponse:
+          (NotificationResponse notificationResponse) async {});
 }

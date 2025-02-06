@@ -399,7 +399,7 @@ packages:
     source: hosted
     version: "3.0.2"
   flutter_local_notifications:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: flutter_local_notifications
       sha256: ef41ae901e7529e52934feba19ed82827b11baa67336829564aeab3129460610
@@ -1397,7 +1397,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: fdccbd5c4e9dec379fe3dba03f82b9f3ff99fdf1
+      resolved-ref: a7a06183de0d1774f85e3b88a98baa420847b0f9
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_notification.git"
     source: git
     version: "0.0.1"
