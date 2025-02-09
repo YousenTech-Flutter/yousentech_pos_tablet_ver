@@ -25,13 +25,14 @@ import 'package:yousentech_pos_token/token_settings/presentation/token_screen.da
 
 Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
+  await FileManagement.getInstance();
   if (Platform.isAndroid || Platform.isIOS) {
     initNotification();
   }
   await SharedPr.loadEnv();
   await SharedPr.init();
   SharedPr.retrieveInfo();
-  await FileManagement.getInstance();
+  
   await DbHelper.getInstance();
   await AppInvoiceStyle.loadFonts();
   await RemoteDatabaseSettingService.instantiateOdooConnection();
