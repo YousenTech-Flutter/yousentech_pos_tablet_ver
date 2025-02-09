@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- //==========add packege for image_picker========= -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To allow users to upload or select photos from their library, enhancing the app's functionality</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To allow users to take photos directly within the app, enhancing functionality</string>
+	<!-- //==========add packege for image_picker========= -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -48,6 +54,7 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>com.apple.security.network.client</key>
+	
     <true/>
 
 </dict>

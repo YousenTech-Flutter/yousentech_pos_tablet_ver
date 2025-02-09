@@ -22,8 +22,10 @@ packages:
     description:
       name: asn1lib
       sha256: "1c296cd268f486cabcc3930e9b93a8133169305f18d722916e675959a88f6d2c"
+      sha256: "1c296cd268f486cabcc3930e9b93a8133169305f18d722916e675959a88f6d2c"
       url: "https://pub.dev"
     source: hosted
+    version: "1.5.9"
     version: "1.5.9"
   async:
     dependency: transitive
@@ -150,8 +152,10 @@ packages:
     description:
       name: connectivity_plus
       sha256: "04bf81bb0b77de31557b58d052b24b3eee33f09a6e7a8c68a3e247c7df19ec27"
+      sha256: "04bf81bb0b77de31557b58d052b24b3eee33f09a6e7a8c68a3e247c7df19ec27"
       url: "https://pub.dev"
     source: hosted
+    version: "6.1.3"
     version: "6.1.3"
   connectivity_plus_platform_interface:
     dependency: transitive
@@ -214,8 +218,10 @@ packages:
     description:
       name: device_info_plus
       sha256: "72d146c6d7098689ff5c5f66bcf593ac11efc530095385356e131070333e64da"
+      sha256: "72d146c6d7098689ff5c5f66bcf593ac11efc530095385356e131070333e64da"
       url: "https://pub.dev"
     source: hosted
+    version: "11.3.0"
     version: "11.3.0"
   device_info_plus_platform_interface:
     dependency: transitive
@@ -980,7 +986,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "40d4ae273042dbb27ce8c6234fb8c702a03b58de"
+      resolved-ref: a80fd4929e6ddf5027b8b6505621ad6a1fa1a88b
       url: "https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git"
     source: git
     version: "1.0.0"
@@ -1045,7 +1051,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "1d99baf4a1e8851761c8e284d56666b06ede6280"
+      resolved-ref: "895731a3e1d5fe7f422cd0fcc817c735b8a562c6"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -1139,8 +1145,10 @@ packages:
     description:
       name: sqlite3
       sha256: decd58236d7c59e01ae81b34ebd158e6a1b61e0ae5397fc428736eb91ab82808
+      sha256: decd58236d7c59e01ae81b34ebd158e6a1b61e0ae5397fc428736eb91ab82808
       url: "https://pub.dev"
     source: hosted
+    version: "2.7.3"
     version: "2.7.3"
   sse:
     dependency: transitive
