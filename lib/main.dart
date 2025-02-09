@@ -117,19 +117,18 @@ Future<void> initNotification() async {
     requestAlertPermission: true,
     requestBadgePermission: true,
     requestSoundPermission: true,
-    defaultPresentBadge : true,
-    defaultPresentList:true,
+    defaultPresentBadge: true,
+    defaultPresentList: true,
   );
 
   /// initialization part
   var initializationSettings = InitializationSettings(
       android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
 
-  await notificationsPlugin.initialize(initializationSettings,
-      onDidReceiveNotificationResponse:
-          (NotificationResponse notificationResponse) async {
-  },
-  
+  await notificationsPlugin.initialize(
+    initializationSettings,
+    onDidReceiveNotificationResponse:
+        (NotificationResponse notificationResponse) async {},
   );
 
   if (Platform.isAndroid) {
