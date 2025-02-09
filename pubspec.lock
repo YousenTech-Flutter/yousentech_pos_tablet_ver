@@ -1307,7 +1307,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: c18ad822651acf29d86b1b7fed528c6ad22ed576
+      resolved-ref: "4f887cf249d2c5e2f674ace71fae17d993e4dfe6"
       url: "https://github.com/YousenTech-Flutter/yousentech_authentication.git"
     source: git
     version: "1.0.0"
@@ -1316,7 +1316,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: a49e89c6a3011c90b882a6b55d7ef0c95e2ee4cd
+      resolved-ref: "5d2a817ed2e5dc08cd48588b6d22b840cdc68393"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_basic_data_management.git"
     source: git
     version: "1.0.0"
@@ -1325,7 +1325,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: a34528acb4cfd21a70d56499610cb94c82ab371e
+      resolved-ref: "19af89b05ec847c22d3112033f0ad3bc2a5a468c"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_dashboard.git"
     source: git
     version: "1.0.0"
@@ -1370,7 +1370,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "3316e2e520bf60790aba4de3d9201e225ea205dd"
+      resolved-ref: dad2e294f3bc7d2c21671519dcf32d9150f2f693
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_loading_synchronizing_data.git"
     source: git
     version: "1.0.0"
@@ -1406,7 +1406,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "179d4448f81acea84c09786051c3f1c8f49ebac8"
+      resolved-ref: a3b39331d99aef6456c4331a80b692083953dd62
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_notification_history.git"
     source: git
     version: "1.0.1"
