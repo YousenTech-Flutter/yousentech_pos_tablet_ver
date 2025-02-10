@@ -931,7 +931,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "11f7d2298442200f4e60992706319d172ace87d6"
+      resolved-ref: "79a0504bae90bf10d5f05f3d77bde7786cc5e077"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_preferences.git"
     source: git
     version: "1.0.1"
@@ -980,7 +980,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: a80fd4929e6ddf5027b8b6505621ad6a1fa1a88b
+      resolved-ref: "40d4ae273042dbb27ce8c6234fb8c702a03b58de"
       url: "https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git"
     source: git
     version: "1.0.0"
@@ -1045,7 +1045,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "895731a3e1d5fe7f422cd0fcc817c735b8a562c6"
+      resolved-ref: da37f99875e4f9e2a1590a0e1a57577db953f091
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -1355,7 +1355,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: e756438333cfff3facfca900a710f4a2594d03a2
+      resolved-ref: "7562d16881370a0a64a756be5cc33aaafb11bc4e"
       url: "https://github.com/YousenTech-Flutter/yousentech_authentication.git"
     source: git
     version: "1.0.0"
@@ -1364,7 +1364,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "5d2a817ed2e5dc08cd48588b6d22b840cdc68393"
+      resolved-ref: "57d0985ca1de44856952ef2250a4e1a40216028a"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_basic_data_management.git"
     source: git
     version: "1.0.0"
@@ -1373,7 +1373,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "8385f622a88fc9f5db6449c22baac49f3bce4ef9"
+      resolved-ref: "41f2ae005fbba44e04cae2aa998811c7ec08b2f1"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_dashboard.git"
     source: git
     version: "1.0.0"
@@ -1517,7 +1517,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "481b04d83c8ac8b119872d93877f9a45e163de63"
+      resolved-ref: "2030fc21a6b75dbf46b4b54f37d40f60a2f98d67"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_token.git"
     source: git
     version: "1.0.0"
