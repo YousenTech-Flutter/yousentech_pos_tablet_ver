@@ -1373,7 +1373,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "41f2ae005fbba44e04cae2aa998811c7ec08b2f1"
+      resolved-ref: "6ef0bec775b74b5683d1862feeb81dff95987c73"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_dashboard.git"
     source: git
     version: "1.0.0"
