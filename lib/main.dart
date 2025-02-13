@@ -32,7 +32,6 @@ Future<void> main(List<String> args) async {
   await SharedPr.loadEnv();
   await SharedPr.init();
   SharedPr.retrieveInfo();
-  
   await DbHelper.getInstance();
   await AppInvoiceStyle.loadFonts();
   await RemoteDatabaseSettingService.instantiateOdooConnection();
