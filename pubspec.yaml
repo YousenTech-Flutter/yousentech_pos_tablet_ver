@@ -118,6 +118,12 @@ flutter:
     - family: Tajawal
       fonts:
         - asset: assets/fonts/Tajawal-Bold.ttf
+    - family: ARIALBD
+      fonts:
+        - asset: assets/fonts/ARIALBD.TTF
+    - family: ARIALBD
+      fonts:
+        - asset: assets/fonts/ARIAL.TTF
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -62,7 +62,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     NetworkConnectivityChecker.init();
-    BackgroundTask.init();
+    // BackgroundTask.init();
     return OverlaySupport(
       child: ScreenUtilInit(
           designSize: const Size(360, 690),
