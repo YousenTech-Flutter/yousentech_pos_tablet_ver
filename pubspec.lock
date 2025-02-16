@@ -1045,7 +1045,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: d12205f8e02a838f7752040221ab7fb538c22f9f
+      resolved-ref: "171b9f72aab80bb36cea741f778578ef3f21151d"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -1381,7 +1381,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "2c83e85163e3aa58759a4139d6f2739b4b5e049e"
+      resolved-ref: e4641f870ce539aedd20ad015736038e18f967b9
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_dashboard.git"
     source: git
     version: "1.0.0"
@@ -1480,7 +1480,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: dd4f0bdedc328bb640492fe4f77e8c2310e51328
+      resolved-ref: "02fdd315e12aa7c164ad9e09ee4e7c49bfd37d88"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_payment_summary.git"
     source: git
     version: "0.0.1"
