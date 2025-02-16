@@ -1045,7 +1045,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: bf1213ab7467bb0d5895c73e8709ce470a5860ec
+      resolved-ref: ef8c92dec49e54d4f50ab2abd5e57d741b594164
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -1363,7 +1363,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: d3f28f4880d9f99f9dea8a5b315189027c766be2
+      resolved-ref: "548a70ad0c9907e27ad0e043bd3ddb2b24606341"
       url: "https://github.com/YousenTech-Flutter/yousentech_authentication.git"
     source: git
     version: "1.0.0"
@@ -1399,7 +1399,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: ef1119edb1988d92950f64b968350e7fa4c62811
+      resolved-ref: "7a94ba11091ee42509f22d0a7f23f3f348d25bea"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_invoice.git"
     source: git
     version: "1.0.1"
@@ -1453,7 +1453,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "852bf40cd414db0e8ae0c53e16ef2da1fc9e7f89"
+      resolved-ref: "6004dcc466b8dea57fa19d9829a8b09c7ac79196"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_notification.git"
     source: git
     version: "0.0.1"
@@ -1498,7 +1498,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: e7eb670f6fbb282479cba7a8c6b9868498494764
+      resolved-ref: "03010ed067bff8779cf1a074735beefa4d43e620"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_session.git"
     source: git
     version: "0.0.1"
