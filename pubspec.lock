@@ -980,7 +980,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "137f6ca13b9e3383e886859236e0fd5d2ebe8c30"
+      resolved-ref: e89f87d05958847fbc27990731f1ca2c74795240
       url: "https://github.com/YousenTech-Flutter/yousentech_remote_database_setting.git"
     source: git
     version: "1.0.0"
@@ -1045,7 +1045,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: ef8c92dec49e54d4f50ab2abd5e57d741b594164
+      resolved-ref: "3a5c6b1e3ff9d101aab61a129ccb404f67d3e951"
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_shared_widgets.git"
     source: git
     version: "1.0.0"
@@ -1138,10 +1138,10 @@ packages:
     dependency: transitive
     description:
       name: sqlite3
-      sha256: decd58236d7c59e01ae81b34ebd158e6a1b61e0ae5397fc428736eb91ab82808
+      sha256: "32b632dda27d664f85520093ed6f735ae5c49b5b75345afb8b19411bc59bb53d"
       url: "https://pub.dev"
     source: hosted
-    version: "2.7.3"
+    version: "2.7.4"
   sqlite3_flutter_libs:
     dependency: transitive
     description:
@@ -1363,7 +1363,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "548a70ad0c9907e27ad0e043bd3ddb2b24606341"
+      resolved-ref: e418e15ec30da025b09e3368a20987c85f7d5c38
       url: "https://github.com/YousenTech-Flutter/yousentech_authentication.git"
     source: git
     version: "1.0.0"
@@ -1471,7 +1471,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: cf4d43b76f7d0f0a361e8d7e73c415ee41c301b9
+      resolved-ref: f515c4b6c18fceb22bfcaf8465d212086c6ee251
       url: "https://github.com/YousenTech-Flutter/yousentech_pos_payment.git"
     source: git
     version: "0.0.1"
