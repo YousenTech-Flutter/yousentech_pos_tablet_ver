@@ -17,9 +17,10 @@ import 'package:shared_widgets/config/app_messages_translation.dart';
 import 'package:shared_widgets/config/network_connectivity_checker.dart';
 import 'package:shared_widgets/utils/file_management.dart';
 import 'package:shared_widgets/utils/mac_address_helper.dart';
+import 'package:shared_widgets/utils/touch_screen_support_helper.dart';
 import 'package:yousentech_authentication/authentication/presentation/views/employees_list.dart';
 import 'package:yousentech_pos_local_db/yousentech_pos_local_db.dart';
-import 'package:yousentech_pos_notification/notification/utils/background_task.dart';
+// import 'package:yousentech_pos_notification/notification/utils/background_task.dart';
 import 'package:yousentech_pos_notification_history/notification_history/domain/notification_history_viewmodel.dart';
 import 'package:yousentech_pos_token/token_settings/presentation/token_screen.dart';
 
@@ -29,6 +30,7 @@ Future<void> main(List<String> args) async {
   if (Platform.isAndroid || Platform.isIOS) {
     initNotification();
   }
+
   await SharedPr.loadEnv();
   await SharedPr.init();
   SharedPr.retrieveInfo();
@@ -36,6 +38,8 @@ Future<void> main(List<String> args) async {
   await AppInvoiceStyle.loadFonts();
   await RemoteDatabaseSettingService.instantiateOdooConnection();
   await MacAddressHelper.getDeviceMacAddress();
+  TouchScreenSupportHelper.isTouchInputAvailable();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.landscapeRight,
