@@ -1,0 +1,2 @@
+E:/test packages/yousentech_pos_tablet_ver/android/app/.cxx/RelWithDebInfo/2p662272/armeabi-v7a/CMakeFiles/edit_cache.dir
+E:/test packages/yousentech_pos_tablet_ver/android/app/.cxx/RelWithDebInfo/2p662272/armeabi-v7a/CMakeFiles/rebuild_cache.dir
