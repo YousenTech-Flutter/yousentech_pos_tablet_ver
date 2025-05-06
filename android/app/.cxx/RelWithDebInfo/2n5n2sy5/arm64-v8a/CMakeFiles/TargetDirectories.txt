@@ -1,0 +1,2 @@
+D:/flutterApps/yousentech_pos_tablet_ver/android/app/.cxx/RelWithDebInfo/2n5n2sy5/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/flutterApps/yousentech_pos_tablet_ver/android/app/.cxx/RelWithDebInfo/2n5n2sy5/arm64-v8a/CMakeFiles/rebuild_cache.dir

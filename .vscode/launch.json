@@ -4,7 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    
+
         {
             "name": "yousentech_pos_tablet_ver",
             "request": "launch",
@@ -24,3 +24,38 @@
         }
     ]
 }
+
+// {
+//   "version": "0.2.0",
+
+//   "configurations": [
+
+//     {
+//       "name": "sdk_gphone64_x86_64",
+
+//       "request": "launch",
+
+//       "type": "dart",
+
+//       // "deviceId": "358240051111110"
+//     },
+
+//     {
+//       "name": "sdk_gphone64_x86_64",
+
+//       "request": "launch",
+
+//       "type": "dart",
+
+//       // "deviceId": "358240051111110"
+//     }
+//   ],
+
+//   "compounds": [
+//     {
+//       "name": "Run All Devices",
+
+//       "configurations": ["sdk_gphone64_x86_64", "sdk_gphone64_x86_64"]
+//     }
+//   ]
+// }

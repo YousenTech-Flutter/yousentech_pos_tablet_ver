@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'dart:io';
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -32,7 +34,8 @@ Future<void> main(List<String> args) async {
     initNotification();
   }
 
-  await SharedPr.loadEnv();
+  // await SharedPr.loadEnv();
+  await dotenv.load(fileName: kDebugMode ? ".env.development" : ".env.production");
   await SharedPr.init();
   SharedPr.retrieveInfo();
   await DbHelper.getInstance();
