@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'dart:io';
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -31,8 +33,11 @@ Future<void> main(List<String> args) async {
   if (Platform.isAndroid || Platform.isIOS) {
     initNotification();
   }
+  await dotenv.load(
+    fileName: kDebugMode ? ".env.development" : ".env.production",
+  );
 
-  await SharedPr.loadEnv();
+  // await SharedPr.loadEnv();
   await SharedPr.init();
   SharedPr.retrieveInfo();
   await DbHelper.getInstance();
@@ -69,44 +74,47 @@ class _MyAppState extends State<MyApp> {
     BackgroundTask.init();
     return OverlaySupport(
       child: ScreenUtilInit(
-          designSize: const Size(360, 690),
-          minTextAdapt: true,
-          splitScreenMode: true,
-          child: SharedPr.subscriptionDetailsObj?.url == null
-              ? const KeyScreen()
-              : SharedPr.token == null
-                  ? const TokenScreen()
-                  : const EmployeesListScreen(),
-          builder: (_, child) {
-            return GetMaterialApp(
-                title: 'Point Of Sale',
-                debugShowCheckedModeBanner: false,
-                translations: Messages(),
-                locale: Locale(SharedPr.lang ?? 'en'),
-                fallbackLocale: const Locale('en'),
-                supportedLocales: const [Locale('en'), Locale('ar')],
-                localizationsDelegates: const [
-                  GlobalMaterialLocalizations.delegate,
-                  GlobalWidgetsLocalizations.delegate,
-                  GlobalCupertinoLocalizations.delegate,
-                ],
-                scrollBehavior: const MaterialScrollBehavior().copyWith(
-                  dragDevices: {
-                    PointerDeviceKind.mouse,
-                    PointerDeviceKind.touch,
-                    PointerDeviceKind.stylus,
-                    PointerDeviceKind.unknown
-                  },
-                ),
-                theme: ThemeData(
-                  useMaterial3: true,
-                  textTheme: Theme.of(context).textTheme.apply(
-                        bodyColor: AppColor.black,
-                        fontFamily: 'Tajawal',
-                      ),
-                ),
-                home: child);
-          }),
+        designSize: const Size(360, 690),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        child:
+            SharedPr.subscriptionDetailsObj?.url == null
+                ? const KeyScreen()
+                : SharedPr.token == null
+                ? const TokenScreen()
+                : const EmployeesListScreen(),
+        builder: (_, child) {
+          return GetMaterialApp(
+            title: 'Point Of Sale',
+            debugShowCheckedModeBanner: false,
+            translations: Messages(),
+            locale: Locale(SharedPr.lang ?? 'en'),
+            fallbackLocale: const Locale('en'),
+            supportedLocales: const [Locale('en'), Locale('ar')],
+            localizationsDelegates: const [
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            scrollBehavior: const MaterialScrollBehavior().copyWith(
+              dragDevices: {
+                PointerDeviceKind.mouse,
+                PointerDeviceKind.touch,
+                PointerDeviceKind.stylus,
+                PointerDeviceKind.unknown,
+              },
+            ),
+            theme: ThemeData(
+              useMaterial3: true,
+              textTheme: Theme.of(context).textTheme.apply(
+                bodyColor: AppColor.black,
+                fontFamily: 'Tajawal',
+              ),
+            ),
+            home: child,
+          );
+        },
+      ),
     );
   }
 }
@@ -127,7 +135,9 @@ Future<void> initNotification() async {
 
   /// initialization part
   var initializationSettings = InitializationSettings(
-      android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
+    android: initializationSettingsAndroid,
+    iOS: initializationSettingsIOS,
+  );
 
   await notificationsPlugin.initialize(
     initializationSettings,
@@ -138,7 +148,8 @@ Future<void> initNotification() async {
   if (Platform.isAndroid) {
     await notificationsPlugin
         .resolvePlatformSpecificImplementation<
-            AndroidFlutterLocalNotificationsPlugin>()
+          AndroidFlutterLocalNotificationsPlugin
+        >()
         ?.requestNotificationsPermission();
   }
 }

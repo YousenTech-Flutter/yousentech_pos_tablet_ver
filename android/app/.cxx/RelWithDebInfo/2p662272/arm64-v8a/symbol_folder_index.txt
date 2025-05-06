@@ -1,0 +1,1 @@
+E:\test packages\yousentech_pos_tablet_ver\build\app\intermediates\cxx\RelWithDebInfo\2p662272\obj\arm64-v8a
