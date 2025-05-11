@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math';
 import 'dart:ui';
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -72,12 +74,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     NetworkConnectivityChecker.init();
     BackgroundTask.init();
+    print(MediaQuery.of(context).size.width);
     return OverlaySupport(
       child: ScreenUtilInit(
         designSize: const Size(360, 690),
         minTextAdapt: true,
         splitScreenMode: true,
         child:
+            // ddd(),
             SharedPr.subscriptionDetailsObj?.url == null
                 ? const KeyScreen()
                 : SharedPr.token == null
@@ -151,5 +155,38 @@ Future<void> initNotification() async {
           AndroidFlutterLocalNotificationsPlugin
         >()
         ?.requestNotificationsPermission();
+  }
+}
+
+class ddd extends StatefulWidget {
+  const ddd({super.key});
+
+  @override
+  State<ddd> createState() => _dddState();
+}
+
+class _dddState extends State<ddd> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: FloatingActionButton(
+          onPressed: () {
+            ScreenSizeUtil.getPhysicalScreenSizeInInches().then((value) {
+              print("value ::::::::::: ${value}");
+            });
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class ScreenSizeUtil {
+  static const MethodChannel _channel = MethodChannel('screen_size');
+
+  static Future<double> getPhysicalScreenSizeInInches() async {
+    final double inches = await _channel.invokeMethod('getScreenInches');
+    return inches;
   }
 }
